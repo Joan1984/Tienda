@@ -16,7 +16,7 @@
     
 </head>
 <body class="@yield('body-class')">
-  <nav class="navbar navbar-transparent navbar-absolute fixed-top navbar-expand-lg"color-on-scroll="100" id="sectionsNav">
+  <nav class="navbar navbar-transparent navbar-absolute fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="{{url('login')}}">
@@ -73,8 +73,8 @@
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
               <i class="fa fa-instagram"></i>
-            </a> -->
-          </li>
+            </a> 
+          </li>-->
         </ul>
       </div>
     </div>
@@ -97,7 +97,6 @@
   <script src="{{asset('/js/plugins/jquery.sharrre.js')}}" type="text/javascript"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="{{asset('/js/material-kit.js?v=2.0.4')}}" type="text/javascript"></script>
-</body>
 </html>
         
                         

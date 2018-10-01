@@ -16,20 +16,23 @@
                             {{session('status')}}
                         </div>
                     @endif  
-                       <ul class="nav nav-pills nav-pills-icons nav-stacked" role="tablist">
-                            <li class="active">
+                    <div class="row">
+                        <ul class="nav nav-pills nav-fill nav-justified flex-column flex-lg-row">
+                            <li class="nav-item nav-link">
                                 <a href="#dashboard-2" role="tab" data-toggle="tab">
                                     <i class="material-icons btn-lg">dashboard</i>
                                     Carrito de compras
                                     </a>
                             </li>
-                            <li >
+                            <li class="nav-item nav-link">
                                 <a href="#schedule-2" role="tab" data-toggle="tab">
                                     <i class="material-icons btn-lg">schedule</i>
                                     Pedidos realizados
                                     </a>
                             </li>
                         </ul>
+                    </div>
+                       
                                                     
                 </div>
         </div>

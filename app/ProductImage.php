@@ -12,14 +12,14 @@ class ProductImage extends Model
     	return $this->belongsTo(Product::class);
     }
 
-    //accesor
+    //accessor
     public function getUrlAtribute()
     {
     	if(substr($this->image, 0, 4) === "http"){
     		return $this->image; 
     	}
 
-    	//return '/images/products' . $this->image;
-        return  asset('/images/products/' . $this->image);
+    	return '/images/products/' . $this->image;
+        //return  asset('/images/products/' . $this->image);
     }
 }

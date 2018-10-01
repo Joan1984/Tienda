@@ -20,7 +20,7 @@ class ImageController extends Controller
     {
     	//guardar la imagen en nuestro proyecto
     	$file = $request->file('photo');
-    	$path = public_path() . '/images/products/';
+    	$path = public_path() . '/images/products';
     	$fileName = uniqid() . $file->getClientOriginalName();
     	$moved = $file->move($path, $fileName);
     	

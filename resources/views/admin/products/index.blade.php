@@ -39,15 +39,15 @@
                             {{csrf_field()}}-->
                             <!--{{method_field('DELETE')}}-->
                             <a href="" rel="tooltip" title="Ver producto" class="btn btn-info btn-sm">
-                              <i class="material-icons">info</i>
+                              <i class="fa fa-info"></i>
                             </a>
-                            <a href="{{url('/admin/products/'.$product->id.'/edit')}}" type="button" rel="tooltip" title="Editar producto" class="btn btn-success btn-sm"><i class="material-icons">edit</i>
+                            <a href="{{url('/admin/products/'.$product->id.'/edit')}}" rel="tooltip" title="Editar producto" class="btn btn-success btn-sm"><i class="fa fa-edit"></i>
                             </a>
                             <a href="{{url('/admin/products/'.$product->id.'/images')}} " rel="tooltip" title="Imagenes del producto" class="btn btn-warning btn-sm">
-                              <i class="material-icons">images</i>
+                              <i class="fa fa-image"></i>
                             </a>
                             <a  href="{{ url('/admin/products/'.$product->id).'/delete' }}" rel="tooltip" title="Eliminar"  class="btn btn-danger btn-sm">
-                              <i class="material-icons">close</i>
+                              <i class="fa fa-times"></i>
                             </button>
                              <!--</form> -->
                              
