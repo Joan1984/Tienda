@@ -23,11 +23,11 @@ Route::middleware(['auth','admin'])->prefix('admin')->group(function () {
 	Route::post('/products', 'ProductController@store');//crear (registrar)
 	Route::get('/products/{id}/edit', 'ProductController@edit');//editar
 	Route::post('/products/{id}/edit', 'ProductController@update');//actualizar
-	Route::post('/products/{id}/delete', 'ProductController@destroy');//form eliminar
+	Route::delete('/products/{id}', 'ProductController@destroy');//form eliminar
 	
 	Route::get('/products/{id}/images', 'ImageController@index');//actualizar
 	Route::post('/products/{id}/images', 'ImageController@store');//registrar
-	Route::delete('/products/{id}/', 'ImageController@destroy');//form eliminar
+	Route::delete('/products/{id}/images', 'ImageController@destroy');//form eliminar
 });
 
 

@@ -13,7 +13,7 @@ class ProductImage extends Model
     }
 
     //accessor
-    public function getUrlAtribute()
+    public function getUrlAttribute()
     {
     	if(substr($this->image, 0, 4) === "http"){
     		return $this->image; 

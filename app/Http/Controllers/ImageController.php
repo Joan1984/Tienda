@@ -41,15 +41,17 @@ class ImageController extends Controller
     	//Eliminar el archivo
         $productImage = ProductImage::find($request->image_id);
         if(substr($productImage->image, 0, 4) === "http"){
-            $delete = true;
+            $deleted = true;
         }else{
-            $fullPath = public_path() . '/images/products/' . $image; 
-            $delete = File::delete($fullPath);
+            $fullPath = public_path() . '/images/products/' . $productImage->image; 
+            $deleted = File::delete($fullPath);
         }
 
         //Eliminar el registro de la bd
-        if($delete){
+        if($deleted){
             $productImage->delete();
         }
+
+        return back();
     }
 }

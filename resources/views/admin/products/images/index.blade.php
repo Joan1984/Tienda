@@ -24,12 +24,12 @@
                 @foreach($images as $image)
                 <div class="col-md-4">
                   <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="{{$image->image}}" alt="Card image cap">
+                    <img class="card-img-top" src="{{$image->url}}" alt="Card image cap">
                       <div class="card-body">
                         <form method="post" action="">
                           {{csrf_field()}}
                           {{method_field('DELETE')}}
-                          <input type="hidden" name="image_id" values="{{$image->id}}" >
+                           <input type="hidden" name="image_id" value="{{ $image->id }}">
                           <button type="submit" class="btn btn-danger" title="Eliminar  imagen">Eliminar imagen</button> 
                         </form>
                       </div>

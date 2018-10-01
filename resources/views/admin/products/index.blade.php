@@ -35,9 +35,9 @@
                       <td>{{$product->category ? $product->category->name : 'General' }}</td>
                       <td class="text-right">&euro; {{$product->price}}</td>
                       <td class="td-actions text-right">
-                           <!--<form method="post" action="{{ url('/admin/products/delete'.$product->id) }}">
-                            {{csrf_field()}}-->
-                            <!--{{method_field('DELETE')}}-->
+                          <form method="post" action="{{ url('/admin/products/'.$product->id) }}">
+                            {{csrf_field()}}
+                            {{method_field('DELETE')}}
                             <a href="" rel="tooltip" title="Ver producto" class="btn btn-info btn-sm">
                               <i class="fa fa-info"></i>
                             </a>
@@ -46,10 +46,10 @@
                             <a href="{{url('/admin/products/'.$product->id.'/images')}} " rel="tooltip" title="Imagenes del producto" class="btn btn-warning btn-sm">
                               <i class="fa fa-image"></i>
                             </a>
-                            <a  href="{{ url('/admin/products/'.$product->id).'/delete' }}" rel="tooltip" title="Eliminar"  class="btn btn-danger btn-sm">
+                            <button type="submit" rel="tooltip" title="Eliminar"  class="btn btn-danger btn-sm">
                               <i class="fa fa-times"></i>
                             </button>
-                             <!--</form> -->
+                          </form>
                              
                       </td>
                   </tr>
